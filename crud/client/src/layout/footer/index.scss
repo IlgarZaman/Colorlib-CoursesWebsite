@@ -1,0 +1,95 @@
+#footer {
+  background-color: #4255a4;
+  .mainDiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    .footerSection {
+      padding: 100px 0 100px 0;
+      display: flex;
+      .leftSection {
+        width: 30%;
+        .leftSectionText {
+          color: white;
+          font-size: 16px;
+          line-height: 1.8;
+          font-family: "Mulish", sans-serif;
+          margin: 20px 0 0 0;
+        }
+        .leftSectionIcon {
+          margin: 40px 0 0 0;
+          display: flex;
+          column-gap: 25px;
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            background-color: #485aad;
+            border-radius: 50%;
+            color: white;
+            transition: all 0.8s;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(199, 82, 199);
+            }
+          }
+        }
+      }
+      .rightSection {
+        display: flex;
+        h3 {
+          color: white;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 600;
+          font-size: 22px;
+          margin: 0;
+          margin: 0 0 0 130px;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          li {
+            margin: 20px 0 0 130px;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: "Josefin Sans", sans-serif;
+            &:hover{
+                text-decoration: underline;
+            }
+          }
+        }
+        a:link {
+          text-decoration: none;
+        }
+
+        a:visited {
+          text-decoration: none;
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+    .footerEnd {
+      padding: 0 0 50px 0;
+      text-align: center;
+      color: white;
+      i {
+        color: purple;
+      }
+      a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}
+// #485AAD

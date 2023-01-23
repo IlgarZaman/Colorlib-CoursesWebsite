@@ -1,0 +1,271 @@
+.mainDivv {
+    background-color: #6474fe;
+    .navDivv {
+      z-index: 999999;
+      position: sticky;
+      max-width: 1300px;
+      margin: 0 auto;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 80px;
+        .sections {
+          position: relative;
+  
+          opacity: 90%;
+          column-gap: 30px;
+          display: flex;
+          a:link {
+            text-decoration: none;
+          }
+  
+          a:visited {
+            text-decoration: none;
+          }
+          a {
+            color: white;
+            font-family: "Mulish", sans-serif;
+            font-size: 17px;
+            font-weight: 200;
+            padding: 40px 0;
+          }
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          .menuHover {
+            position: relative;
+  
+            .menu {
+              display: none;
+              position: absolute;
+              // z-index: 9999999;
+              top: 100px;
+              transition: all 1s;
+            }
+            &:hover {
+              .menu {
+                transition: all 1s;
+                opacity: 100%;
+                height: 150px;
+                width: 150px;
+                display: block;
+                background-color: white;
+                ul {
+                  li {
+                    margin: 0 0 20px 0;
+                    color: #4c42b1;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btn {
+          display: flex;
+          column-gap: 30px;
+          .joinbtn {
+            cursor: pointer;
+            border: none;
+            padding: 13px 40px;
+            font-size: 16px;
+            position: relative;
+            border-radius: 4px;
+            font-family: "Mulish", sans-serif;
+            color: white;
+            background-color: rgb(255, 109, 4);
+            &::before {
+              transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              content: "";
+              width: 0px;
+              height: 100%;
+              background: linear-gradient(
+                to bottom,
+                #60105b,
+                #7b1d75,
+                #982991,
+                #b636ad,
+                #d444cb
+              );
+              border-radius: 4px;
+  
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            & .joinBtnText {
+              color: white;
+              mix-blend-mode: hard-light;
+            }
+            &:hover {
+              &::before {
+                border-radius: 4px;
+  
+                background: linear-gradient(
+                  to bottom,
+                  #921d8a,
+                  #9d2695,
+                  #a52f9d,
+                  #b636ad,
+                  #df55d6
+                );
+                width: 100%;
+              }
+            }
+          }
+          .loginbtnDiv {
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .loginbtn {
+              cursor: pointer;
+              box-sizing: border-box;
+              border: none;
+              padding: 3px 35px;
+              font-size: 16px;
+              position: relative;
+              border-radius: 4px;
+              font-family: "Mulish", sans-serif;
+              color: white;
+              background: #7173ff;
+              border: 1px solid white;
+              &::before {
+                transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                content: "";
+                width: 0px;
+                height: 100%;
+                background-color: rgb(255, 109, 4);
+                border-radius: 4px;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+              & .loginBtnText {
+                color: white;
+                mix-blend-mode: hard-light;
+              }
+              &:hover {
+                border: none;
+                &::before {
+                  border-radius: 4px;
+                  background-color: rgb(255, 109, 4);
+                  width: 100%;
+                }
+              }
+              .loginBtnText {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+#addCourse {
+  background-image: radial-gradient(
+    circle,
+    #a3216c,
+    #983b83,
+    #8a4e95,
+    #7b5ea1,
+    #6d6ca7,
+    #5d73a9,
+    #4f79a8,
+    #467ea5,
+    #30809e,
+    #1f8195,
+    #1b8188,
+    #27807a
+    
+  );
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 60px;
+    font-weight: 700;
+    color: #4255a4;
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .centerDiv {
+      border-radius: 30px;
+      background-color: rgb(255, 255, 255);
+      height: 500px;
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inputandlabelmain {
+        margin-top: 60px;
+        .inputandlabel {
+          .error {
+            color: red;
+          }
+          label {
+            font-family: "Mulish", sans-serif;
+            color: #4255a4;
+            font-size: 16px;
+            font-weight: 700;
+          }
+          input {
+            width: 300px;
+            height: 30px;
+          }
+        }
+        .btn {
+          position: relative;
+        //   top: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          button {
+            margin-top: 30px;
+            box-sizing: border-box;
+            padding: 17px 40px;
+            color: white;
+            border: 1px solid white;
+            font-weight: 700;
+            background: radial-gradient(
+              circle,
+              #4d6993,
+              #0091bf,
+              #00b8bb,
+              #00d882,
+              #a8eb12
+            );
+            cursor: pointer;
+            &:hover {
+              background: linear-gradient(
+                to right,
+                #1b6ae3,
+                #008ae6,
+                #0099af,
+                #009f5e,
+                #6d9b0a
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
