@@ -5,7 +5,7 @@ const Header = () => {
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 400) {
+    if (scrolled > 50) {
       setVisible(true);
     } else if (scrolled <= 400) {
       setVisible(false);

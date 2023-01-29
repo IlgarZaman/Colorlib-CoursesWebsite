@@ -45,7 +45,6 @@
             .menu {
               display: none;
               position: absolute;
-              // z-index: 9999999;
               top: 100px;
               transition: all 1s;
             }
@@ -174,6 +173,7 @@
     }
   }
 #addCourse {
+  padding: 100px 0;
   background-image: radial-gradient(
     circle,
     #a3216c,
@@ -194,8 +194,6 @@
   h1 {
     text-align: center;
     margin: 0;
-    position: relative;
-    top: 60px;
     font-weight: 700;
     color: #4255a4;
     font-size: 40px;
@@ -215,7 +213,7 @@
       justify-content: center;
       align-items: center;
       .inputandlabelmain {
-        margin-top: 60px;
+        margin-top: 10px;
         .inputandlabel {
           .error {
             color: red;
